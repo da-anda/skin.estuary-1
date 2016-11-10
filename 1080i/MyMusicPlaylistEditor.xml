@@ -18,6 +18,7 @@
 			</include>
 		</control>
 		<control type="group">
+			<depth>DepthContentPanel</depth>
 			<include>OpenClose_Left</include>
 			<control type="image">
 				<left>-20</left>
@@ -61,6 +62,7 @@
 		</control>
 		<control type="group">
 			<include>OpenClose_Right</include>
+			<depth>DepthContentPanel</depth>
 			<left>1075</left>
 			<control type="image">
 				<left>-21</left>
