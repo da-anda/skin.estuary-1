@@ -28,6 +28,15 @@
 						<width>widelist_width</width>
 						<height>80</height>
 						<texture colordiffuse="button_focus">lists/focus.png</texture>
+						<animation effect="fade" start="100" end="0" time="0">Focus</animation>
+						<animation effect="fade" start="0" end="50" time="0">UnFocus</animation>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>widelist_width</width>
+						<height>80</height>
+						<texture colordiffuse="button_focus">lists/focus.png</texture>
 						<visible>Control.HasFocus(55)</visible>
 					</control>
 					<control type="label">

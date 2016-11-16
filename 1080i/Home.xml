@@ -937,6 +937,15 @@
 					<ondown>noop</ondown>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<focusedlayout height="95">
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<width>462</width>
+							<height>95</height>
+							<texture colordiffuse="button_focus">lists/focus.png</texture>
+							<animation effect="fade" start="100" end="0" time="0">Focus</animation>
+							<animation effect="fade" start="0" end="50" time="0">UnFocus</animation>
+						</control>
 						<control type="group">
 							<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
 							<control type="image">
@@ -1149,7 +1158,7 @@
 						<aspectratio>keep</aspectratio>
 						<width>56</width>
 						<height>56</height>
-						<texture colordiffuse="button_focus">icons/logo.png</texture>
+						<texture colordiffuse="logo">icons/logo.png</texture>
 					</control>
 					<control type="image">
 						<left>40</left>
@@ -1157,7 +1166,7 @@
 						<aspectratio>keep</aspectratio>
 						<width>192</width>
 						<height>36</height>
-						<texture>icons/logo-text.png</texture>
+						<texture colordiffuse="text">icons/logo-text.png</texture>
 					</control>
 				</control>
 			</control>
@@ -1176,7 +1185,7 @@
 					<titlecolor>button_focus</titlecolor>
 					<shadowcolor>text_shadow</shadowcolor>
 					<headlinecolor>FFC0C0C0</headlinecolor>
-					<textcolor>white</textcolor>
+					<textcolor>text</textcolor>
 					<visible>!Player.hasMedia</visible>
 				</control>
 			</control>
