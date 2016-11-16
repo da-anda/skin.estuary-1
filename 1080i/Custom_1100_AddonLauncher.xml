@@ -87,6 +87,15 @@
 					<onright>SetFocus($INFO[Container(9000).ListItem.Property(menu_id)])</onright>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<focusedlayout height="95">
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<width>462</width>
+							<height>95</height>
+							<texture colordiffuse="button_focus">lists/focus.png</texture>
+							<animation effect="fade" start="100" end="0" time="0">Focus</animation>
+							<animation effect="fade" start="0" end="50" time="0">UnFocus</animation>
+						</control>
 						<control type="group">
 							<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
 							<control type="image">

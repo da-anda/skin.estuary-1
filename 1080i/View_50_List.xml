@@ -77,7 +77,7 @@
 						<top>0</top>
 						<height>69</height>
 						<texture colordiffuse="button_focus">lists/focus.png</texture>
-						<visible>Control.HasFocus($PARAM[list_id])</visible>
+						<animation effect="fade" start="100" end="50" time="0" condition="!Control.HasFocus($PARAM[list_id])">Conditional</animation>
 					</control>
 					<control type="label">
 						<left>70</left>
@@ -109,16 +109,6 @@
 						<height>32</height>
 						<texture>$VAR[ListWatchedIconVar]</texture>
 						<animation effect="fade" start="30" end="100" time="300" reversible="false">Focus</animation>
-					</control>
-					<control type="image">
-						<left>21</left>
-						<top>20</top>
-						<width>32</width>
-						<height>32</height>
-						<texture colordiffuse="button_focus">$VAR[ListWatchedIconVar]</texture>
-						<animation effect="fade" start="0" end="100" time="300" reversible="false">Focus</animation>
-						<animation effect="fade" time="150">VisibleChange</animation>
-						<visible>!Control.HasFocus($PARAM[list_id])</visible>
 					</control>
 				</control>
 			</focusedlayout>

@@ -29,7 +29,7 @@
 							<right>0</right>
 							<height>80</height>
 							<texture colordiffuse="button_focus">lists/focus.png</texture>
-							<visible>Control.HasFocus(55)</visible>
+							<animation effect="fade" start="100" end="50" time="0" condition="!Control.HasFocus(55)">Conditional</animation>
 						</control>
 						<control type="label">
 							<left>18</left>
@@ -75,16 +75,6 @@
 							<visible>String.IsEmpty(ListItem.Year)</visible>
 							<texture>$VAR[ListWatchedIconVar]</texture>
 							<animation effect="fade" start="30" end="100" time="300" reversible="false">Focus</animation>
-						</control>
-						<control type="image">
-							<left>35</left>
-							<top>25</top>
-							<width>32</width>
-							<visible>String.IsEmpty(ListItem.Year)</visible>
-							<height>32</height>
-							<texture colordiffuse="button_focus">$VAR[ListWatchedIconVar]</texture>
-							<animation effect="fade" start="0" end="100" time="300" reversible="false">Focus</animation>
-							<visible>!Control.HasFocus(55)</visible>
 						</control>
 					</control>
 				</focusedlayout>
