@@ -1,20 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <colors>
-	<color name="primary_background">FF006699</color>
-	<color name="secondary_background">4D24CCA2</color>
+	<color name="primary_background">6624CCA2</color>
+	<color name="secondary_background">66FFFFFF</color>
+	<color name="dim_background">FF000000</color>
 	<color name="dialog_tint">FFD4E6F7</color>
-	<color name="background">FF000000</color>
-	<color name="bg_image">FF909090</color>
+	<color name="background">FF006699</color>
+	<color name="bg_fanart">33666666</color>
 	<color name="bg_overlay">30FFFFFF</color>
-	<color name="black">FF000000</color>
+
+	<color name="black">FF222222</color>
 	<color name="white">FFF0F0F0</color>
 	<color name="grey">FFA0A0A0</color>
 	<color name="blue">FF7ACAFE</color>
 	<color name="red">FFCE4421</color>
-	<color name="button_focus">FF12B2E7</color>
+
+	<color name="theme_primary">FF12B2E7</color>
+	<color name="theme_secondary">FF12B2E7</color>
+
+	<color name="logo">FF12B2E7</color>
+	<color name="panel">CC111111</color>
+	<color name="contextmenu">FF101010</color>
+	<color name="item">CC111111</color>
+	<color name="item_focus">FF12B2E7</color>
+	<color name="sideblade">EE101010</color>
+	<color name="osdfade">CC121212</color>
+	<color name="content_overlay">CC222222</color>
+	<color name="dialog_header">FF12B2E7</color>
+
+	<color name="headline">FF12B2E7</color>
+	<color name="text">FFFFFFFF</color>
 	<color name="text_shadow">22000000</color>
+
+	<color name="button">CC101010</color>
+	<color name="button_focus">FF12B2E7</color>
+	<color name="text_button">FFFFFFFF</color>
+	<color name="text_button_focus">FFFFFFFF</color>
+	<color name="icon_button_focus">FFFFFFFF</color>
+	<color name="icon_button">FFFFFFFF</color>
+
 	<color name="border_alpha">60FFFFFF</color>
 	<color name="disabled">40FFFFFF</color>
-	<color name="selected">FF11E7B1</color>
+	<color name="selected">FFB25B00</color>
 	<color name="invalid">FFFF0000</color>
 </colors>

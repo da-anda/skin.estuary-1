@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<colors>
+	<color name="background">FFA2D6DB</color>
+	<color name="primary_background">99bd96c3</color>
+	<color name="secondary_background">CCFFFFFF</color>
+	<color name="dim_background">FF00000</color>
+	<color name="bg_overlay">30876734</color>
+	<color name="bg_fanart">11FFFFFF</color>
+
+	<color name="disabled">FF999999</color>
+	<color name="grey">FF999999</color>
+	<color name="selected">FFb25000</color>
+
+	<color name="theme_primary">FF6ba9b3</color>
+	<color name="theme_secondary">FFb25000</color>
+
+	<color name="button">FFEEEEEE</color>
+	<color name="button_focus">FF6ba9b3</color>
+	<color name="dialog_header">FF6ba9b3</color>
+	<color name="logo">FF6ba9b3</color>
+	<color name="text">FF333333</color>
+	<color name="headline">FF6ba9b3</color>
+	<color name="text_shadow">33FFFFFF</color>
+	<color name="text_button">FF333333</color>
+	<color name="text_button_focus">FFFFFFFF</color>
+	<color name="panel">9Feeeeee</color>
+	<color name="item">AFEEEEEE</color>
+	<color name="item_focus">FF6ba9b3</color>
+	<color name="osdfade">66858c92</color>
+	<color name="content_overlay">CC94a4a7</color>
+	<color name="sideblade">BBDFDFDF</color>
+	<color name="icon_button_focus">FFFFFFFF</color>
+	<color name="icon_button">FF666666</color>
+</colors>

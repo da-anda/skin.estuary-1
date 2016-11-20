@@ -11,12 +11,12 @@
 	</include>
 	<include name="CategoryLabel">
 		<control type="label" id="$PARAM[list_id]666">
-			<left>500</left>
+			<left>72</left>
 			<top>80</top>
 			<width>900</width>
 			<height>90</height>
 			<label>$PARAM[label]</label>
-			<textcolor>white</textcolor>
+			<textcolor>headline</textcolor>
 			<shadowcolor>text_shadow</shadowcolor>
 			<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 		</control>
@@ -27,7 +27,7 @@
 			<left>15</left>
 			<width>670</width>
 			<height>225</height>
-			<texture border="22">dialogs/dialog-bg.png</texture>
+			<texture border="22" colordiffuse="panel">dialogs/dialog-bg.png</texture>
 		</control>
 		<control type="image">
 			<left>55</left>
@@ -69,7 +69,6 @@
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
 			<control type="list" id="$PARAM[list_id]">
-				<left>442</left>
 				<top>120</top>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<right>0</right>
@@ -87,7 +86,7 @@
 								<top>0</top>
 								<width>312</width>
 								<height>448</height>
-								<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+								<texture border="21" colordiffuse="item">dialogs/dialog-bg-nobo.png</texture>
 								<bordertexture border="20">overlays/shadow.png</bordertexture>
 								<bordersize>20</bordersize>
 							</control>
@@ -119,7 +118,7 @@
 							<height>448</height>
 							<aspectratio>scale</aspectratio>
 							<texture background="true">$INFO[ListItem.Art(poster)]</texture>
-							<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+							<texture border="21" colordiffuse="item">dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
@@ -142,7 +141,7 @@
 								<top>0</top>
 								<width>312</width>
 								<height>448</height>
-								<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+								<texture border="21" colordiffuse="item">dialogs/dialog-bg-nobo.png</texture>
 								<bordertexture border="20">overlays/shadow.png</bordertexture>
 								<bordersize>20</bordersize>
 							</control>
@@ -174,7 +173,7 @@
 							<height>448</height>
 							<aspectratio>scale</aspectratio>
 							<texture background="true">$INFO[ListItem.Art(poster)]</texture>
-							<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+							<texture border="21" colordiffuse="item">dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
@@ -189,7 +188,7 @@
 								<top>0</top>
 								<width>80</width>
 								<height>80</height>
-								<texture flipy="true">overlays/overlay-bg.png</texture>
+								<texture flipy="true" colordiffuse="item_focus">overlays/overlay-bg.png</texture>
 								<visible>Listitem.IsCollection | ListItem.IsResumable | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
 							</control>
 							<control type="image">
@@ -255,7 +254,7 @@
 								<top>-2</top>
 								<width>276</width>
 								<height>414</height>
-								<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+								<texture border="8" colordiffuse="item_focus">buttons/thumbnail_focused.png</texture>
 							</control>
 						</control>
 					</control>
@@ -273,11 +272,10 @@
 				<visible>$PARAM[visible]</visible>
 				<control type="multiimage">
 					<top>0</top>
-					<left>442</left>
 					<right>0</right>
 					<height>100%</height>
 					<aspectratio>scale</aspectratio>
-					<imagepath colordiffuse="33FFFFFF">$PARAM[image_path]</imagepath>
+					<imagepath colordiffuse="text_button">$PARAM[image_path]</imagepath>
 					<visible>String.IsEmpty(Skin.String(HomeFanart.path))</visible>
 				</control>
 				<control type="grouplist" id="$PARAM[button_id]577">
@@ -307,8 +305,8 @@
 							<textoffsetx>40</textoffsetx>
 							<onclick>$PARAM[button_onclick]</onclick>
 							<align>center</align>
-							<texturefocus border="23" colordiffuse="button_focus">buttons/dialogbutton-fo.png</texturefocus>
-							<texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
+							<texturefocus border="23" colordiffuse="item_focus">buttons/dialogbutton-fo.png</texturefocus>
+							<texturenofocus border="40" colordiffuse="item">buttons/dialogbutton-nofo.png</texturenofocus>
 							<visible>$PARAM[visible_1]</visible>
 						</control>
 						<control type="button" id="$PARAM[button_id]568">
@@ -319,8 +317,8 @@
 							<onclick>$PARAM[button2_onclick]</onclick>
 							<onclick>SetFocus(9000)</onclick>
 							<align>center</align>
-							<texturefocus border="23" colordiffuse="button_focus">buttons/dialogbutton-fo.png</texturefocus>
-							<texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
+							<texturefocus border="23" colordiffuse="item_focus">buttons/dialogbutton-fo.png</texturefocus>
+							<texturenofocus border="40" colordiffuse="item">buttons/dialogbutton-nofo.png</texturenofocus>
 							<visible>$PARAM[visible_2]</visible>
 						</control>
 					</control>
@@ -339,7 +337,6 @@
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
-				<left>442</left>
 				<top>120</top>
 				<right>0</right>
 				<height>450</height>
@@ -355,7 +352,7 @@
 							<top>0</top>
 							<width>344</width>
 							<height>340</height>
-							<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+							<texture border="21" colordiffuse="item">dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
@@ -373,6 +370,7 @@
 							<width>288</width>
 							<label>$PARAM[first_label]</label>
 							<font>font12</font>
+							<textcolor>text_button</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
 						</control>
@@ -382,6 +380,7 @@
 							<width>288</width>
 							<label>$PARAM[second_label]</label>
 							<font>font10</font>
+							<textcolor>text_button</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
 						</control>
@@ -402,7 +401,7 @@
 							<top>0</top>
 							<width>344</width>
 							<height>340</height>
-							<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+							<texture border="21" colordiffuse="item">dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
@@ -414,7 +413,7 @@
 								<top>-2</top>
 								<width>348</width>
 								<height>344</height>
-								<texture border="23" colordiffuse="button_focus">buttons/button-fo.png</texture>
+								<texture border="23" colordiffuse="item_focus">buttons/button-fo.png</texture>
 							</control>
 							<control type="progress">
 								<left>18</left>
@@ -441,6 +440,7 @@
 							<width>288</width>
 							<label>$PARAM[first_label]</label>
 							<font>font12</font>
+							<textcolor>text_button_focus</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
 						</control>
@@ -450,6 +450,7 @@
 							<width>288</width>
 							<label>$PARAM[second_label]</label>
 							<font>font10</font>
+							<textcolor>text_button_focus</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
 						</control>
@@ -473,7 +474,6 @@
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
-				<left>442</left>
 				<top>120</top>
 				<right>0</right>
 				<height>500</height>
@@ -491,7 +491,7 @@
 							<width>340</width>
 							<height>400</height>
 							<aspectratio>scale</aspectratio>
-							<texture>dialogs/dialog-bg-nobo.png</texture>
+							<texture colordiffuse="item">dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
@@ -509,6 +509,7 @@
 							<width>260</width>
 							<label>$PARAM[sub_label]</label>
 							<font>font12</font>
+							<textcolor>text_button</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
 						</control>
@@ -518,6 +519,7 @@
 							<width>260</width>
 							<label>$PARAM[main_label]</label>
 							<font>font12</font>
+							<textcolor>text_button</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
 						</control>
@@ -529,6 +531,7 @@
 							<aligny>center</aligny>
 							<label>$PARAM[single_label]</label>
 							<font>font12</font>
+							<textcolor>text_button</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
 						</control>
@@ -550,8 +553,8 @@
 							<width>340</width>
 							<height>400</height>
 							<aspectratio>scale</aspectratio>
-							<texture>dialogs/dialog-bg-nobo.png</texture>
-							<bordertexture border="20">overlays/shadow.png</bordertexture>
+							<texture colordiffuse="item">dialogs/dialog-bg-nobo.png</texture>
+							<bordertexture border="20" colordiffuse="item">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
@@ -582,6 +585,7 @@
 								<font>font12</font>
 								<scroll>true</scroll>
 								<label>$PARAM[main_label]</label>
+								<textcolor>text_button_focus</textcolor>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
 							</control>
@@ -593,6 +597,7 @@
 								<aligny>center</aligny>
 								<label>$PARAM[single_label]</label>
 								<font>font12</font>
+								<textcolor>text_button_focus</textcolor>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
 							</control>
@@ -603,7 +608,7 @@
 								<height>364</height>
 								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
-								<texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+								<texture background="true" border="8" colordiffuse="item_focus">buttons/thumbnail_focused.png</texture>
 							</control>
 						</control>
 					</control>
@@ -626,7 +631,6 @@
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
-				<left>442</left>
 				<top>120</top>
 				<right>0</right>
 				<height>300</height>
@@ -641,7 +645,7 @@
 						<control type="image">
 							<width>336</width>
 							<height>210</height>
-							<texture>dialogs/dialog-bg-nobo.png</texture>
+							<texture colordiffuse="item">dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
@@ -650,7 +654,7 @@
 							<left>62</left>
 							<width>220</width>
 							<height>130</height>
-							<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
+							<texture fallback="DefaultFolder.png" colordiffuse="icon_button">$PARAM[icon]</texture>
 							<aspectratio>keep</aspectratio>
 							<visible>!$PARAM[smaller_icon]</visible>
 						</control>
@@ -659,7 +663,7 @@
 							<left>62</left>
 							<width>220</width>
 							<height>90</height>
-							<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
+							<texture fallback="DefaultFolder.png" colordiffuse="icon_button">$PARAM[icon]</texture>
 							<aspectratio>keep</aspectratio>
 							<visible>$PARAM[smaller_icon]</visible>
 						</control>
@@ -670,6 +674,7 @@
 							<height>70</height>
 							<label>$INFO[ListItem.Label]</label>
 							<font>font12</font>
+							<textcolor>text_button</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -689,7 +694,7 @@
 						<control type="image">
 							<width>336</width>
 							<height>210</height>
-							<texture>dialogs/dialog-bg-nobo.png</texture>
+							<texture colordiffuse="item">dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
@@ -698,7 +703,7 @@
 							<left>-2</left>
 							<width>340</width>
 							<height>214</height>
-							<texture border="23" colordiffuse="button_focus">buttons/button-fo.png</texture>
+							<texture border="23" colordiffuse="item_focus">buttons/button-fo.png</texture>
 							<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 						</control>
@@ -707,7 +712,7 @@
 							<left>62</left>
 							<width>220</width>
 							<height>130</height>
-							<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
+							<texture fallback="DefaultFolder.png" colordiffuse="icon_button_focus">$PARAM[icon]</texture>
 							<aspectratio>keep</aspectratio>
 							<visible>!$PARAM[smaller_icon]</visible>
 						</control>
@@ -716,7 +721,7 @@
 							<left>62</left>
 							<width>220</width>
 							<height>90</height>
-							<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
+							<texture fallback="DefaultFolder.png" colordiffuse="icon_button_focus">$PARAM[icon]</texture>
 							<aspectratio>keep</aspectratio>
 							<visible>$PARAM[smaller_icon]</visible>
 						</control>
@@ -727,6 +732,7 @@
 							<height>70</height>
 							<label>$INFO[ListItem.Label]</label>
 							<font>font12</font>
+							<textcolor>text_button_focus</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -794,7 +800,6 @@
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
-				<left>442</left>
 				<top>120</top>
 				<right>0</right>
 				<height>430</height>
@@ -808,7 +813,7 @@
 						<control type="image">
 							<width>334</width>
 							<height>340</height>
-							<texture>dialogs/dialog-bg-nobo.png</texture>
+							<texture colordiffuse="item">dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
@@ -827,6 +832,7 @@
 							<height>70</height>
 							<label>$PARAM[label]</label>
 							<font>font12</font>
+							<textcolor>text_button</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
 							<aligny>top</aligny>
@@ -838,6 +844,7 @@
 							<height>65</height>
 							<label>$PARAM[label2]</label>
 							<font>font12</font>
+							<textcolor>text_button</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
 							<aligny>top</aligny>
@@ -864,7 +871,7 @@
 						<control type="image">
 							<width>334</width>
 							<height>340</height>
-							<texture>dialogs/dialog-bg-nobo.png</texture>
+							<texture colordiffuse="item">dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
@@ -873,7 +880,7 @@
 							<left>-2</left>
 							<width>338</width>
 							<height>344</height>
-							<texture border="23" colordiffuse="button_focus">buttons/button-fo.png</texture>
+							<texture border="23" colordiffuse="item_focus">buttons/button-fo.png</texture>
 							<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 						</control>
@@ -892,6 +899,7 @@
 							<height>70</height>
 							<label>$PARAM[label]</label>
 							<font>font12</font>
+							<textcolor>text_button_focus</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
 							<scroll>true</scroll>
@@ -904,6 +912,7 @@
 							<height>65</height>
 							<label>$PARAM[label2]</label>
 							<font>font12</font>
+							<textcolor>text_button_focus</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
 							<scroll>true</scroll>
@@ -923,7 +932,7 @@
 		</definition>
 	</include>
 	<include name="WeatherWidget">
-		<param name="left">442</param>
+		<param name="left">0</param>
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
@@ -946,7 +955,7 @@
 							<top>20</top>
 							<width>254</width>
 							<height>350</height>
-							<texture>dialogs/dialog-bg-nobo.png</texture>
+							<texture colordiffuse="item">dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
@@ -963,12 +972,14 @@
 							<align>center</align>
 							<label>$INFO[ListItem.Label]</label>
 							<width>230</width>
+							<textcolor>text_button</textcolor>
 						</control>
 						<control type="label">
 							<left>15</left>
 							<top>80</top>
 							<align>center</align>
 							<font>font12</font>
+							<textcolor>text_button</textcolor>
 							<label>$INFO[ListItem.Property(ShortDate)]</label>
 							<width>230</width>
 						</control>
@@ -978,6 +989,7 @@
 							<align>center</align>
 							<label>$INFO[ListItem.Label2]</label>
 							<font>font12</font>
+							<textcolor>text_button</textcolor>
 							<width>230</width>
 						</control>
 					</control>
@@ -997,7 +1009,7 @@
 							<top>20</top>
 							<width>254</width>
 							<height>350</height>
-							<texture>dialogs/dialog-bg-nobo.png</texture>
+							<texture colordiffuse="item">dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
@@ -1006,7 +1018,7 @@
 							<top>18</top>
 							<width>258</width>
 							<height>354</height>
-							<texture border="23" colordiffuse="button_focus">buttons/button-fo.png</texture>
+							<texture border="23" colordiffuse="item_focus">buttons/button-fo.png</texture>
 							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 							<animation effect="fade" start="0" end="100" time="0" delay="30">Visible</animation>
 							<visible>Control.HasFocus($PARAM[list_id])</visible>
@@ -1024,12 +1036,14 @@
 							<align>center</align>
 							<label>$INFO[ListItem.Label]</label>
 							<width>230</width>
+							<textcolor>text_button_focus</textcolor>
 						</control>
 						<control type="label">
 							<left>15</left>
 							<top>80</top>
 							<align>center</align>
 							<font>font12</font>
+							<textcolor>text_button_focus</textcolor>
 							<label>$INFO[ListItem.Property(ShortDate)]</label>
 							<width>230</width>
 						</control>
@@ -1039,6 +1053,7 @@
 							<align>center</align>
 							<label>$INFO[ListItem.Label2]</label>
 							<font>font12</font>
+							<textcolor>text_button_focus</textcolor>
 							<width>230</width>
 						</control>
 					</control>
@@ -1178,7 +1193,7 @@
 					<top>100</top>
 					<width>1820</width>
 					<height>920</height>
-					<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+					<texture border="21" colordiffuse="item">dialogs/dialog-bg-nobo.png</texture>
 					<bordertexture border="20">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
 				</control>

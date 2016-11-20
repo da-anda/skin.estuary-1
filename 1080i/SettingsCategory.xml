@@ -106,7 +106,6 @@
 				<textoffsetx>40</textoffsetx>
 				<aligny>center</aligny>
 				<font>font37</font>
-				<textcolor>white</textcolor>
 				<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
 				<texturenofocus></texturenofocus>
 			</control>
@@ -129,10 +128,10 @@
 				<onright>5</onright>
 				<onup>3</onup>
 				<ondown>3</ondown>
-				<textureradioonfocus>icons/settings.png</textureradioonfocus>
-				<textureradioonnofocus>icons/settings.png</textureradioonnofocus>
-				<textureradioofffocus>icons/settings.png</textureradioofffocus>
-				<textureradiooffnofocus>icons/settings.png</textureradiooffnofocus>
+				<textureradioonfocus colordiffuse="icon_button_focus">icons/settings.png</textureradioonfocus>
+				<textureradioonnofocus colordiffuse="text">icons/settings.png</textureradioonnofocus>
+				<textureradioofffocus colordiffuse="icon_button_focus">icons/settings.png</textureradioofffocus>
+				<textureradiooffnofocus colordiffuse="text">icons/settings.png</textureradiooffnofocus>
 			</control>
 		</control>
 		<control type="scrollbar" id="60">
@@ -157,15 +156,21 @@
 		<include>BottomBar</include>
 		<control type="group">
 			<include>OpenClose_Right</include>
+			<control type="image">
+				<left>470</left>r
+				<right>0</right>
+				<bottom>0</bottom>
+				<height>135</height>
+				<texture colordiffuse="panel">lists/panel.png</texture>
+			</control>
 			<control type="textbox" id="6">
 				<description>description area</description>
 				<left>510</left>
 				<bottom>25</bottom>
 				<right>60</right>
-				<height>102</height>
+				<height>120</height>
 				<font>font12</font>
 				<align>justify</align>
-				<textcolor>button_focus</textcolor>
 				<autoscroll time="3000" delay="5000" repeat="5000">true</autoscroll>
 			</control>
 		</control>

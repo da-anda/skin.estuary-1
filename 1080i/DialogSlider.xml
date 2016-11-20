@@ -13,7 +13,7 @@
 				<top>-30</top>
 				<width>840</width>
 				<height>155</height>
-				<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+				<texture border="21" colordiffuse="panel">dialogs/dialog-bg-nobo.png</texture>
 				<bordertexture border="20">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 			</control>

@@ -10,7 +10,7 @@
 			<width>128</width>
 			<height>128</height>
 			<texturefocus colordiffuse="button_focus">calibrate/cal_tl.png</texturefocus>
-			<texturenofocus>calibrate/cal_tl.png</texturenofocus>
+			<texturenofocus colordiffuse="button">calibrate/cal_tl.png</texturenofocus>
 		</control>
 		<control type="mover" id="9">
 			<description>right bottom mover</description>
@@ -19,7 +19,7 @@
 			<width>128</width>
 			<height>128</height>
 			<texturefocus colordiffuse="button_focus">calibrate/cal_br.png</texturefocus>
-			<texturenofocus>calibrate/cal_br.png</texturenofocus>
+			<texturenofocus colordiffuse="button">calibrate/cal_br.png</texturenofocus>
 		</control>
 		<control type="mover" id="10">
 			<description>subtitle position mover</description>
@@ -28,7 +28,7 @@
 			<width>384</width>
 			<height>128</height>
 			<texturefocus colordiffuse="button_focus">calibrate/cal_sub.png</texturefocus>
-			<texturenofocus>calibrate/cal_sub.png</texturenofocus>
+			<texturenofocus colordiffuse="button">calibrate/cal_sub.png</texturenofocus>
 		</control>
 		<control type="resize" id="11">
 			<description>pixel aspect ratio</description>
@@ -37,7 +37,7 @@
 			<width>500</width>
 			<height>500</height>
 			<texturefocus colordiffuse="button_focus">calibrate/cal_ratio.png</texturefocus>
-			<texturenofocus>calibrate/cal_ratio.png</texturenofocus>
+			<texturenofocus colordiffuse="button">calibrate/cal_ratio.png</texturenofocus>
 		</control>
 		<control type="label" id="2">
 			<description>coordinates label</description>
@@ -47,7 +47,7 @@
 			<align>center</align>
 			<label></label>
 			<font>font37</font>
-			<shadowcolor>FF000000</shadowcolor>
+			<shadowcolor>text_shadow</shadowcolor>
 		</control>
 		<control type="label" id="3">
 			<description>help information</description>
@@ -57,7 +57,7 @@
 			<align>center</align>
 			<label></label>
 			<font>font37</font>
-			<shadowcolor>FF000000</shadowcolor>
+			<shadowcolor>text_shadow</shadowcolor>
 		</control>
 	</controls>
 </window>

@@ -16,7 +16,7 @@
 				<bottom>0</bottom>
 				<width>100%</width>
 				<height>300%</height>
-				<texture flipy="true">frame/osdfade.png</texture>
+				<texture flipy="true" colordiffuse="osdfade">frame/osdfade.png</texture>
 			</control>
 			<control type="image">
 				<description>background image</description>
@@ -35,7 +35,7 @@
 				<label>$PARAM[DialogHeaderLabel]</label>
 				<align>center</align>
 				<aligny>center</aligny>
-				<shadowcolor>black</shadowcolor>
+				<shadowcolor>text_shadow</shadowcolor>
 			</control>
 			<control type="image">
 				<description>background image</description>
@@ -51,7 +51,7 @@
 				<top>184</top>
 				<width>1542</width>
 				<height>100</height>
-				<texture border="40">buttons/button-alt-nofo.png</texture>
+				<texture border="40" colordiffuse="F7FFFFFF">buttons/button-alt-nofo.png</texture>
 			</control>
 			<control type="edit" id="312">
 				<description>Edit Text</description>
@@ -637,14 +637,14 @@
 					<top>690</top>
 					<width>1560</width>
 					<height>90</height>
-					<texture border="40">buttons/dialogbutton-nofo.png</texture>
+					<texture border="40" colordiffuse="button">buttons/dialogbutton-nofo.png</texture>
 				</control>
 				<control type="image">
 					<left>20</left>
 					<top>770</top>
 					<width>1560</width>
 					<height>90</height>
-					<texture border="40">buttons/dialogbutton-nofo.png</texture>
+					<texture border="40" colordiffuse="button">buttons/dialogbutton-nofo.png</texture>
 				</control>
 				<control type="label" id="314">
 					<left>60</left>

@@ -100,7 +100,7 @@ msgstr ""
 #. home screen channel widget: recently played tv channels. (please note that in some non-english languages #31018 and #31016 might not be equal)
 #: /1080i/Home.xml
 msgctxt "#31016"
-msgid "Recently played channels"
+msgid "Recently watched channels"
 msgstr ""
 
 #: /1080i/DialogVideoInfo.xml
@@ -812,4 +812,19 @@ msgstr ""
 #: /1080i/SkinSettings.xml
 msgctxt "#31158"
 msgid "Touch mode"
+msgstr ""
+
+#: /1080i/Home.xml
+msgctxt "#31159"
+msgid "Spotlight"
+msgstr ""
+
+#: /1080i/Home.xml
+msgctxt "#31160"
+msgid "New and in progress movies"
+msgstr ""
+
+#: /1080i/Home.xml
+msgctxt "#31161"
+msgid "Recently used add-ons"
 msgstr ""

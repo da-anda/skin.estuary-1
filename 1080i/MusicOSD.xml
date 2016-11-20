@@ -45,10 +45,10 @@
 					<onclick>PlayerControl(Previous)</onclick>
 				</control>
 				<control type="radiobutton" id="602">
-					<textureradioonfocus colordiffuse="white">osd/fullscreen/buttons/play.png</textureradioonfocus>
-					<textureradioonnofocus>osd/fullscreen/buttons/play.png</textureradioonnofocus>
-					<textureradioofffocus colordiffuse="white">osd/fullscreen/buttons/pause.png</textureradioofffocus>
-					<textureradiooffnofocus>osd/fullscreen/buttons/pause.png</textureradiooffnofocus>
+					<textureradioonfocus colordiffuse="text_button_focus">osd/fullscreen/buttons/play.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="text">osd/fullscreen/buttons/play.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="text_button_focus">osd/fullscreen/buttons/pause.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="text">osd/fullscreen/buttons/pause.png</textureradiooffnofocus>
 					<texturefocus colordiffuse="button_focus">osd/fullscreen/buttons/button-fo.png</texturefocus>
 					<width>76</width>
 					<animation center="38,38" effect="zoom" end="100" reversible="false" start="95" time="480" tween="back">Focus</animation>
@@ -120,14 +120,14 @@
 						<width>74</width>
 						<height>74</height>
 						<animation center="38,38" effect="zoom" end="100" reversible="false" start="95" time="480" tween="back" condition="Control.HasFocus(704)">Conditional</animation>
-						<texture colordiffuse="white">$VAR[PlayerControlsRepeatImageVar]</texture>
+						<texture colordiffuse="text">$VAR[PlayerControlsRepeatImageVar]</texture>
 					</control>
 				</control>
 				<control type="radiobutton" id="607">
-					<textureradioonfocus colordiffuse="white">osd/fullscreen/buttons/random-on.png</textureradioonfocus>
-					<textureradioonnofocus>osd/fullscreen/buttons/random-on.png</textureradioonnofocus>
-					<textureradioofffocus colordiffuse="white">osd/fullscreen/buttons/random-off.png</textureradioofffocus>
-					<textureradiooffnofocus>osd/fullscreen/buttons/random-off.png</textureradiooffnofocus>
+					<textureradioonfocus colordiffuse="text_button_focus">osd/fullscreen/buttons/random-on.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="text">osd/fullscreen/buttons/random-on.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="text_button_focus">osd/fullscreen/buttons/random-off.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="text">osd/fullscreen/buttons/random-off.png</textureradiooffnofocus>
 					<textureradioondisabled colordiffuse="disabled">osd/fullscreen/buttons/random-on.png</textureradioondisabled>
 					<textureradiooffdisabled colordiffuse="disabled">osd/fullscreen/buttons/random-off.png</textureradiooffdisabled>
 					<texturefocus colordiffuse="button_focus">osd/fullscreen/buttons/button-fo.png</texturefocus>

@@ -43,6 +43,7 @@
 						<aligny>center</aligny>
 						<height>110</height>
 						<font>font36_title</font>
+						<textcolor>headline</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<!-- 					<visible>ListItem.IsCollection</visible>
 						 -->

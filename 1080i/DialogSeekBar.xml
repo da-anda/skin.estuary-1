@@ -13,7 +13,7 @@
 				<left>-40</left>
 				<width>120%</width>
 				<height>200</height>
-				<texture flipy="true">frame/osdfade.png</texture>
+				<texture flipy="true" colordiffuse="osdfade">frame/osdfade.png</texture>
 			</control>
 			<control type="group">
 				<visible>!Window.IsVisible(videoosd) + !Window.IsVisible(musicosd)</visible>
@@ -23,7 +23,7 @@
 					<top>90</top>
 					<width>120</width>
 					<height>99</height>
-					<texture>$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</texture>
+					<texture colordiffuse="text">$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</texture>
 					<aspectratio>keep</aspectratio>
 					<visible>!Player.ChannelPreviewActive</visible>
 				</control>
@@ -32,7 +32,7 @@
 					<top>120</top>
 					<width>264</width>
 					<height>40</height>
-					<texture>$INFO[MusicPlayer.UserRating,flags/starrating/,.png]</texture>
+					<texture colordiffuse="text">$INFO[MusicPlayer.UserRating,flags/starrating/,.png]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
@@ -70,7 +70,7 @@
 				<animation delay="0" effect="slide" time="120" start="0,0" end="0,-20" tween="sine" easing="inout" condition="!String.IsEmpty(Control.GetLabel(40000))">Conditional</animation>
 				<label>$VAR[SeekTimeLabelVar]</label>
 				<font>font45</font>
-				<shadowcolor>black</shadowcolor>
+				<shadowcolor>text_shadow</shadowcolor>
 			</control>
 			<control type="label" id="40000">
 				<centerleft>50%</centerleft>
@@ -80,7 +80,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$VAR[SeekLabel]</label>
-				<shadowcolor>black</shadowcolor>
+				<shadowcolor>text_shadow</shadowcolor>
 			</control>
 			<control type="progress">
 				<left>0</left>

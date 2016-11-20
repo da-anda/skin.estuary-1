@@ -88,7 +88,7 @@
 							<top>18</top>
 							<width>824</width>
 							<height>160</height>
-							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+							<texture border="8" colordiffuse="item_focus">buttons/thumbnail_focused.png</texture>
 						</control>
 						<control type="group">
 							<left>405</left>

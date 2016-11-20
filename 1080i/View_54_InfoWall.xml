@@ -5,7 +5,7 @@
 			<top>-10</top>
 			<width>396</width>
 			<height>380</height>
-			<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+			<texture border="21" colordiffuse="panel">dialogs/dialog-bg-nobo.png</texture>
 			<bordertexture border="20">overlays/shadow.png</bordertexture>
 			<bordersize>20</bordersize>
 		</control>
@@ -30,6 +30,7 @@
 			<width>358</width>
 			<textoffsetx>20</textoffsetx>
 			<height>20</height>
+			<textcolor>headline</textcolor>
 			<align>center</align>
 			<aligny>center</aligny>
 			<label>$INFO[ListItem.Label]</label>
@@ -43,7 +44,7 @@
 				<top>0</top>
 				<width>316</width>
 				<height>386</height>
-				<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+				<texture border="21" colordiffuse="item">dialogs/dialog-bg-nobo.png</texture>
 				<bordertexture border="20">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 			</control>
@@ -71,6 +72,7 @@
 				<font>font12</font>
 				<align>center</align>
 				<aligny>center</aligny>
+				<textcolor>headline</textcolor>
 				<label>$PARAM[label]</label>
 			</control>
 		</definition>
@@ -85,7 +87,7 @@
 					<top>-10</top>
 					<width>290</width>
 					<height>400</height>
-					<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+					<texture border="21" colordiffuse="panel">dialogs/dialog-bg-nobo.png</texture>
 					<bordertexture border="20">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
 				</control>
@@ -104,6 +106,7 @@
 					<width>242</width>
 					<height>90</height>
 					<font>font27</font>
+					<textcolor>headline</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
@@ -185,7 +188,7 @@
 							<top>8</top>
 							<width>256</width>
 							<height>366</height>
-							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+							<texture border="8" colordiffuse="item_focus">buttons/thumbnail_focused.png</texture>
 							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
 						</control>
 						<control type="group">
@@ -220,7 +223,7 @@
 							<top>20</top>
 							<width>276</width>
 							<height>347</height>
-							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+							<texture border="8" colordiffuse="item_focus">buttons/thumbnail_focused.png</texture>
 							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
 						</control>
 						<control type="group">
@@ -250,7 +253,7 @@
 							<top>6</top>
 							<width>364</width>
 							<height>348</height>
-							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+							<texture border="8" colordiffuse="item_focus">buttons/thumbnail_focused.png</texture>
 							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
 						</control>
 					</control>

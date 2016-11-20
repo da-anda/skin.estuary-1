@@ -20,7 +20,7 @@
 				<top>80</top>
 				<width>920</width>
 				<height>665</height>
-				<texture border="40">buttons/dialogbutton-nofo.png</texture>
+				<texture border="40" colordiffuse="button">buttons/dialogbutton-nofo.png</texture>
 			</control>
 			<control type="list" id="3">
 				<left>20</left>

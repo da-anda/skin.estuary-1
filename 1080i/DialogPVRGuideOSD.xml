@@ -86,7 +86,7 @@
 								<top>-100</top>
 								<width>900</width>
 								<height>350</height>
-								<texture border="40">buttons/dialogbutton-nofo.png</texture>
+								<texture border="40" colordiffuse="button">buttons/dialogbutton-nofo.png</texture>
 							</control>
 							<control type="textbox">
 								<left>815</left>
@@ -116,7 +116,7 @@
 				<bottom>0</bottom>
 				<width>100%</width>
 				<height>115</height>
-				<texture flipy="true">frame/InfoBar.png</texture>
+				<texture flipy="true" colordiffuse="osdfade">frame/osdfade.png</texture>
 			</control>
 			<control type="group">
 				<include>Animation_TopSlide</include>
@@ -124,7 +124,7 @@
 					<left>0</left>
 					<width>780</width>
 					<height>110</height>
-					<texture>frame/InfoBar.png</texture>
+					<texture colordiffuse="osdfade">frame/osdfade.png</texture>
 				</control>
 				<control type="label" id="2">
 					<description>header label</description>

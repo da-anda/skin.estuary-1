@@ -88,6 +88,7 @@
 						<scroll>true</scroll>
 						<font>font27</font>
 						<label>$INFO[ListItem.Label]</label>
+						<textcolor>text_button_focus</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
 					<control type="label">
@@ -100,6 +101,7 @@
 						<font>font12</font>
 						<label>$VAR[ListLabel2Var]</label>
 						<animation effect="fade" start="70" end="100" time="300" reversible="false">Focus</animation>
+						<textcolor>text_button_focus</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
 					<control type="image">

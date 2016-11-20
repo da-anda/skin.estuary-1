@@ -83,7 +83,7 @@
 					<top>100</top>
 					<width>95%</width>
 					<height>220</height>
-					<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+					<texture border="21" colordiffuse="panel">dialogs/dialog-bg-nobo.png</texture>
 					<bordertexture border="20">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
 				</control>

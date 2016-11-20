@@ -19,7 +19,7 @@
 					<width>607</width>
 					<height>607</height>
 					<aspectratio>scale</aspectratio>
-					<texture>dialogs/dialog-bg-nobo.png</texture>
+					<texture colordiffuse="panel">dialogs/dialog-bg-nobo.png</texture>
 					<bordertexture border="20">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
 				</control>
@@ -101,7 +101,7 @@
 						<width>1190</width>
 						<height>320</height>
 						<label></label>
-						<texturenofocus border="21">dialogs/dialog-bg.png</texturenofocus>
+						<texturenofocus border="21" colordiffuse="panel">dialogs/dialog-bg.png</texturenofocus>
 						<onclick>SetProperty(TextViewer_Header,$LOCALIZE[21821],home)</onclick>
 						<onclick>SetProperty(TextViewer_Text,$ESCVAR[MusicInfoTextboxVar],home)</onclick>
 						<onclick>ActivateWindow(1102)</onclick>
@@ -208,7 +208,7 @@
 							<top>-10</top>
 							<width>250</width>
 							<height>312</height>
-							<texture border="40">buttons/button-nofo.png</texture>
+							<texture border="40" colordiffuse="button">buttons/button-nofo.png</texture>
 						</control>
 						<control type="image">
 							<left>30</left>
@@ -244,7 +244,7 @@
 								<top>-10</top>
 								<width>250</width>
 								<height>312</height>
-								<texture border="40">buttons/button-nofo.png</texture>
+								<texture border="40" colordiffuse="button">buttons/button-nofo.png</texture>
 							</control>
 							<control type="image">
 								<left>30</left>

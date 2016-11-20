@@ -25,14 +25,14 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>blue</textcolor>
-				<shadowcolor>black</shadowcolor>
+				<shadowcolor>text_shadow</shadowcolor>
 			</control>
 			<control type="image">
 				<left>-5</left>
 				<top>110</top>
 				<width>370</width>
 				<height>582</height>
-				<texture border="40">buttons/dialogbutton-nofo.png</texture>
+				<texture border="40" colordiffuse="button">buttons/dialogbutton-nofo.png</texture>
 			</control>
 			<control type="grouplist" id="3">
 				<description>Controller profiles grouplist</description>
@@ -72,14 +72,14 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>blue</textcolor>
-				<shadowcolor>black</shadowcolor>
+				<shadowcolor>text_shadow</shadowcolor>
 			</control>
 			<control type="image">
 				<left>975</left>
 				<top>110</top>
 				<width>370</width>
 				<height>582</height>
-				<texture border="40">buttons/dialogbutton-nofo.png</texture>
+				<texture border="40" colordiffuse="button">buttons/dialogbutton-nofo.png</texture>
 			</control>
 			<control type="grouplist" id="5">
 				<description>Features grouplist</description>
@@ -121,7 +121,7 @@
 				<aligny>center</aligny>
 				<font>font20_title</font>
 				<textcolor>grey</textcolor>
-				<shadowcolor>black</shadowcolor>
+				<shadowcolor>text_shadow</shadowcolor>
 			</control>
 			<control type="image" id="9">
 				<description>Feature separator image</description>

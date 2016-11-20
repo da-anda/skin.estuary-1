@@ -14,14 +14,14 @@
 			<centertop>50%</centertop>
 			<height>720</height>
 			<control type="image">
-				<left>0</left>
+				<left>-10%</left>
 				<top>4</top>
-				<width>100%</width>
+				<width>120%</width>
 				<height>400</height>
 				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 				<animation effect="fade" time="200">VisibleChange</animation>
-				<texture colordiffuse="E6FFFFFF">dialogs/dialog-bg-nobo.png</texture>
+				<texture colordiffuse="panel">dialogs/dialog-bg-nobo.png</texture>
 				<visible>Control.IsVisible(51)</visible>
 			</control>
 			<control type="group">
@@ -66,6 +66,7 @@
 								<height>100</height>
 								<label>$INFO[ListItem.Label]</label>
 								<font>font25_title</font>
+								<textcolor>headline</textcolor>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
 								<aligny>center</aligny>
@@ -129,6 +130,7 @@
 								<height>100</height>
 								<label>$INFO[ListItem.Label]</label>
 								<font>font25_title</font>
+								<textcolor>headline</textcolor>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
 								<aligny>center</aligny>
@@ -180,6 +182,7 @@
 						<height>40</height>
 						<label>$INFO[ListItem.Label]$VAR[ListSubLabelVar]</label>
 						<font>font45_title</font>
+						<textcolor>headline</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
 					<control type="textbox">
@@ -227,7 +230,7 @@
 				<height>721</height>
 				<visible>Control.HasFocus(51)</visible>
 				<animation effect="fade" time="100">VisibleChange</animation>
-				<texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+				<texture background="true" border="8" colordiffuse="item_focus">buttons/thumbnail_focused.png</texture>
 			</control>
 			<control type="group">
 				<left>216</left>

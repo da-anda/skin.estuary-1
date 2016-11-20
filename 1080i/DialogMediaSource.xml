@@ -25,14 +25,14 @@
 			<font>font12</font>
 			<label>$LOCALIZE[1021]</label>
 			<textcolor>button_focus</textcolor>
-			<shadowcolor>black</shadowcolor>
+			<shadowcolor>text_shadow</shadowcolor>
 		</control>
 		<control type="image">
 			<left>25</left>
 			<top>145</top>
 			<width>860</width>
 			<height>285</height>
-			<texture border="40">buttons/dialogbutton-nofo.png</texture>
+			<texture border="40" colordiffuse="button">buttons/dialogbutton-nofo.png</texture>
 		</control>
 		<control type="list" id="10">
 			<left>45</left>
@@ -116,7 +116,7 @@
 			<font>font12</font>
 			<label>$LOCALIZE[1022]</label>
 			<textcolor>button_focus</textcolor>
-			<shadowcolor>black</shadowcolor>
+			<shadowcolor>text_shadow</shadowcolor>
 		</control>
 		<control type="edit" id="12">
 			<description>Name Button</description>

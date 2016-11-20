@@ -38,6 +38,7 @@
 							<width>80</width>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Year]</label>
+							<textcolor>text_button_focus</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
 							<visible>!Container.Content(episodes) + !Container.Content(movies)</visible>
 						</control>
@@ -56,6 +57,7 @@
 							<aligny>center</aligny>
 							<scroll>true</scroll>
 							<label>$INFO[ListItem.Label]</label>
+							<textcolor>text_button_focus</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 						<control type="label">
@@ -65,6 +67,7 @@
 							<align>right</align>
 							<aligny>center</aligny>
 							<label>$VAR[ActorLabel2]</label>
+							<textcolor>text_button_focus</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 						<control type="image">

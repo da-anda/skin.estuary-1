@@ -100,7 +100,6 @@
 					<width>44</width>
 					<height>44</height>
 					<font>font20_title</font>
-					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.UserRating]</label>
 				</control>
 			</control>
@@ -131,6 +130,7 @@
 						<label>$PARAM[item_label]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 						<font>$PARAM[font]</font>
+						<textcolor>text_button_focus</textcolor>
 					</control>
 				</focusedlayout>
 				<itemlayout height="$PARAM[item_height]" width="$PARAM[width]">
@@ -166,7 +166,7 @@
 			<top>15</top>
 			<width>510</width>
 			<height>570</height>
-			<texture border="40">buttons/dialogbutton-nofo.png</texture>
+			<texture border="40" colordiffuse="button">buttons/dialogbutton-nofo.png</texture>
 		</control>
 		<control type="scrollbar" id="$PARAM[scrollbar_id]">
 			<left>542</left>
@@ -223,7 +223,7 @@
 					<top>0</top>
 					<width>470</width>
 					<height>80</height>
-					<texture colordiffuse="button_focus">lists/focus.png</texture>
+					<texture colordiffuse="item_focus">lists/focus.png</texture>
 					<visible>Control.HasFocus($PARAM[list_id])</visible>
 				</control>
 				<control type="image">
@@ -240,6 +240,7 @@
 					<width>388</width>
 					<height>40</height>
 					<font>font12</font>
+					<textcolor>text_button_focus</textcolor>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
@@ -249,6 +250,7 @@
 					<width>388</width>
 					<height>30</height>
 					<font>font12</font>
+					<textcolor>text_button_focus</textcolor>
 					<aligny>center</aligny>
 					<textcolor>grey</textcolor>
 					<label>$INFO[ListItem.Label2]</label>
@@ -320,6 +322,7 @@
 					<font>$PARAM[font]</font>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
+					<textcolor>text_button_focus</textcolor>
 				</control>
 			</focusedlayout>
 		</definition>
@@ -333,7 +336,7 @@
 				<left>0</left>
 				<width>40</width>
 				<height>40</height>
-				<texture colordiffuse="grey">$PARAM[icon]</texture>
+				<texture colordiffuse="text">$PARAM[icon]</texture>
 			</control>
 			<control type="label">
 				<left>50</left>
@@ -341,7 +344,7 @@
 				<height>32</height>
 				<aligny>center</aligny>
 				<font>font13</font>
-				<label>$PARAM[label]</label>
+				<label colordiffuse="text">$PARAM[label]</label>
 			</control>
 		</control>
 	</include>
@@ -355,7 +358,7 @@
 				<height>$PARAM[height]</height>
 				<fadetime>0</fadetime>
 				<aspectratio align="center" aligny="center">keep</aspectratio>
-				<texture>$PARAM[texture]</texture>
+				<texture colordiffuse="text">$PARAM[texture]</texture>
 				<visible>$PARAM[visible]</visible>
 			</control>
 		</definition>
@@ -402,7 +405,6 @@
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Duration,, $LOCALIZE[31132]]</label>
 					<font>font_flag</font>
-					<textcolor>white</textcolor>
 				</control>
 				<include content="MediaFlag">
 					<param name="texture" value="flags/flag.png" />
@@ -568,7 +570,7 @@
 									<top>20</top>
 									<width>276</width>
 									<height>347</height>
-									<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+									<texture border="8" colordiffuse="item_focus">buttons/thumbnail_focused.png</texture>
 									<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
 								</control>
 							</control>
@@ -653,6 +655,7 @@
 					<width>100%</width>
 					<label>$PARAM[main_label]</label>
 					<font>font52_title</font>
+					<textcolor>headline</textcolor>
 					<shadowcolor>text_shadow</shadowcolor>
 					<height>65</height>
 					<align>center</align>
@@ -770,7 +773,7 @@
 			<animation effect="fade" time="300">VisibleChange</animation>
 			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-			<texture colordiffuse="C2FFFFFF">colors/black.png</texture>
+			<texture colordiffuse="content_overlay">colors/white.png</texture>
 			<visible>$PARAM[darken_bg]</visible>
 		</control>
 		<control type="button">
@@ -796,7 +799,7 @@
 				<top>0</top>
 				<right>0</right>
 				<height>70</height>
-				<texture colordiffuse="button_focus" border="2">colors/white70.png</texture>
+				<texture colordiffuse="dialog_header" border="2">colors/white70.png</texture>
 			</control>
 			<control type="label" id="$PARAM[DialogHeaderId]">
 				<left>40</left>
@@ -806,7 +809,7 @@
 				<font>font32_title</font>
 				<label>$PARAM[DialogHeaderLabel]</label>
 				<aligny>center</aligny>
-				<shadowcolor>black</shadowcolor>
+				<shadowcolor>text_shadow</shadowcolor>
 			</control>
 			<control type="button" id="22002">
 				<description>button overlay to avoid closing in dialog area</description>
@@ -847,8 +850,8 @@
 					<left>0</left>
 					<top>0</top>
 					<width>110%</width>
-					<height>130</height>
-					<texture>frame/InfoBar.png</texture>
+					<height>170</height>
+					<texture colordiffuse="osdfade">frame/osdfade.png</texture>
 					<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
 				</control>
 				<control type="grouplist">
@@ -1012,17 +1015,23 @@
 		<width>auto</width>
 	</include>
 	<include name="ColoredBackgroundImages">
-		<control type="image">
+		<control type="group">
 			<depth>DepthBackground</depth>
-			<include>FullScreenDimensions</include>
-			<aspectratio>scale</aspectratio>
-			<texture colordiffuse="primary_background">special://skin/extras/backgrounds/primary.jpg</texture>
-		</control>
-		<control type="image">
-			<depth>DepthBackground</depth>
-			<include>FullScreenDimensions</include>
-			<aspectratio>scale</aspectratio>
-			<texture colordiffuse="secondary_background" fallback="special://skin/extras/backgrounds/secondary1.png">$INFO[Skin.String(background_overlay),special://skin/extras/backgrounds/secondary,.png]</texture>
+			<control type="image">
+				<include>FullScreenDimensions</include>
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="primary_background">special://skin/extras/backgrounds/primary.png</texture>
+			</control>
+			<control type="image">
+				<include>FullScreenDimensions</include>
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="secondary_background" fallback="special://skin/extras/backgrounds/secondary1.png">$INFO[Skin.String(background_overlay),special://skin/extras/backgrounds/secondary,.png]</texture>
+			</control>
+			<control type="image">
+				<include>FullScreenDimensions</include>
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="dim_background">special://skin/extras/backgrounds/dim.png</texture>
+			</control>
 		</control>
 	</include>
 	<include name="DefaultBackground">
@@ -1057,7 +1066,7 @@
 						<aspectratio>scale</aspectratio>
 						<fadetime>400</fadetime>
 						<animation effect="fade" time="400">VisibleChange</animation>
-						<texture background="true" colordiffuse="37FFFFFF">$VAR[MediaFanartVar]</texture>
+						<texture background="true" colordiffuse="bg_fanart">$VAR[MediaFanartVar]</texture>
 						<visible>!Control.IsVisible(502) | $EXP[infodialog_active]</visible>
 					</control>
 					<control type="image">
@@ -1069,7 +1078,7 @@
 						<fadetime>400</fadetime>
 						<include>OpenClose_Left</include>
 						<animation effect="fade" time="400">VisibleChange</animation>
-						<texture background="true" colordiffuse="37FFFFFF">$VAR[PosterVar]</texture>
+						<texture background="true" colordiffuse="bg_fanart">$VAR[PosterVar]</texture>
 						<visible>!Control.IsVisible(32111)</visible>
 					</control>
 				</control>
@@ -1090,7 +1099,7 @@
 					<bottom>0</bottom>
 					<width>110%</width>
 					<height>115</height>
-					<texture flipy="true">frame/InfoBar.png</texture>
+					<texture colordiffuse="osdfade" flipy="true">frame/osdfade.png</texture>
 				</control>
 				<control type="group">
 					<visible>$PARAM[info_visible]</visible>
@@ -1117,7 +1126,7 @@
 						<width>36</width>
 						<height>36</height>
 						<texturefocus colordiffuse="button_focus">icons/menu.png</texturefocus>
-						<texturenofocus colordiffuse="FFCCCCCC">icons/menu.png</texturenofocus>
+						<texturenofocus colordiffuse="button">icons/menu.png</texturenofocus>
 						<animation effect="fade" time="200">VisibleChange</animation>
 						<onclick>SetFocus(9000)</onclick>
 						<visible>Window.IsActive(MyPVRGuide.xml) + Control.IsVisible(10)</visible>
@@ -1266,7 +1275,7 @@
 				<left>0</left>
 				<width>$PARAM[width]</width>
 				<height>25</height>
-				<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
+				<texturesliderbar colordiffuse="button">osd/progress/nub_leftright.png</texturesliderbar>
 				<textureslidernib>osd/progress/nub_leftright.png</textureslidernib>
 				<textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernibfocus>
 				<info>Player.Progress</info>
@@ -1278,7 +1287,7 @@
 				<left>0</left>
 				<width>$PARAM[width]</width>
 				<height>25</height>
-				<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
+				<texturesliderbar colordiffuse="button">osd/progress/nub_leftright.png</texturesliderbar>
 				<textureslidernib colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernib>
 				<textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernibfocus>
 				<info>Player.Progress</info>
@@ -1296,7 +1305,7 @@
 		<param name="flipx">false</param>
 		<definition>
 			<control type="image">
-				<texture flipx="$PARAM[flipx]">lists/panel.png</texture>
+				<texture flipx="$PARAM[flipx]" colordiffuse="panel">lists/panel.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<width>$PARAM[width]</width>
