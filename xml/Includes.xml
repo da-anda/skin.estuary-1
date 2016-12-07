@@ -1067,6 +1067,18 @@
 					<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup)">WindowOpen</animation>
 					<include>ColoredBackgroundImages</include>
 				</control>
+				<control type="multiimage">
+					<depth>DepthBackground</depth>
+					<include>FullScreenDimensions</include>
+					<aspectratio>scale</aspectratio>
+					<timeperimage>10000</timeperimage>
+					<randomize>true</randomize>
+					<fadetime>600</fadetime>
+					<loop>yes</loop>
+					<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
+					<visible>System.HasAddon(script.artistslideshow)</visible>
+					<animation effect="fade" start="100" end="20" time="0" condition="System.HasAddon(script.artistslideshow)">Conditional</animation>
+				</control>
 				<control type="group" id="31111">
 					<visible>![Player.HasVideo | [Player.HasAudio + Visualisation.Enabled + !String.IsEmpty(Visualisation.Name)]] | !String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
 					<depth>DepthBackground</depth>
