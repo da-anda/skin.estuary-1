@@ -694,8 +694,14 @@ msgctxt "#31162"
 msgid "Play your personal games or download one of the many game add-ons from the official repository."
 msgstr ""
 
+#. Label of a setting
 #: /xml/Custom_1105_MusicOSDSettings.xml
 msgctxt "#31163"
 msgid "Show Fanart background"
 msgstr ""
 
+#. Label of a setting
+#: /xml/SkinSettings.xml
+msgctxt "#31164"
+msgid "Animate background"
+msgstr ""

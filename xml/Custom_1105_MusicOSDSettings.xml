@@ -31,6 +31,12 @@
 						<onclick>Skin.ToggleSetting(hide_background_fanart)</onclick>
 						<selected>!Skin.HasSetting(hide_background_fanart)</selected>
 					</control>
+					<control type="radiobutton" id="606">
+						<label>$LOCALIZE[31164]</label>
+						<include>DialogSettingButton</include>
+						<onclick>Skin.ToggleSetting(animate_background_fanart)</onclick>
+						<selected>Skin.HasSetting(animate_background_fanart)</selected>
+					</control>
 					<control type="button" id="5002">
 						<width>600</width>
 						<include>DialogSettingButton</include>
